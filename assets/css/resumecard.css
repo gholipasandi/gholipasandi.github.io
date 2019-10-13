@@ -567,9 +567,9 @@ hr {
     border: 2px solid silver;
     /*margin-top: 15px;*/
     border-radius: 2px;
-    width: 350px;
+    width: 100%;
     max-width: 350px;
-    min-width: 350px;
+/*    min-width: 350px;*/
     float: right;
     display: inline;
 }
@@ -594,7 +594,6 @@ hr {
 .description{
     display: inline;
     float: left;
-    width: 350px;
+    width: 100%;
     max-width: 350px;
-    min-width: 350px;
 }
