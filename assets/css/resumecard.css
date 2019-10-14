@@ -572,6 +572,7 @@ hr {
 /*    min-width: 350px;*/
     float: right;
     display: inline;
+    cursor: zoom-in;
 }
 
 .img-fluid {
