@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>مین یاب</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" media="screen" type="text/css" href="css/styles.css" />
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/minesweeper.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header class="row">
+                <div class="sixcol">
+                    <h1>مین یاب</h1>
+                </div>
+                <div class="sixcol last">
+
+                </div>
+            </header>
+            <section class="row">
+                <div class="eightcol">
+                    <canvas id="board" width="600" height="400" oncontextmenu="return false;">
+                        <p>خطا! مرورگر شما قدیمی است.</p>
+                    </canvas>
+
+                    <noscript>
+                    <p>خطا! جاوا اسکریپت مرورگر شما غیرفعال است.</p>
+                    </noscript>
+                </div>
+                <div class="fourcol last">
+                    <div class="startscreen">
+                        <h1>شروع بازی</h1>
+                        <p>سطح سختی بازی را انتخاب کنید</p>
+                        <button id="easybtn">راحت</button>
+                        <button id="mediumbtn">متوسط</button>
+                        <button id="insanebtn">سخت</button>
+
+
+                        <h1>بازی برده:</h1>
+                        <table id="scoreboard">
+                            <tr>
+                                <th>نام</th>
+                                <th>تعداد مین ها</th>
+                                <th>زمان (ثانیه)</th>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                    <div class="gamescreen">
+                        <h1 id="status">بازی شروع شد!</h1>
+                        <p id="msg">برای شروع بازی روی یکی از خانه ها کلیک کنید</p>
+                        <button id="reset">شروع مجدد</button>
+                        <button id="switchscreens">تغییر سطح بازی</button>
+                        <br>
+                        <p><span id="time">0</span> ثانیه</p>
+                        <span id="mines"></span>
+                        <span id="flags"></span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
